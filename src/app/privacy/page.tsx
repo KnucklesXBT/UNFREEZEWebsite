@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { SITE } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: `Privacy Policy for ${SITE.APP_NAME}.`,
+  description: "Privacy Policy for UNFREEZE.",
   alternates: { canonical: "/privacy" }
 };
 
@@ -12,95 +11,129 @@ export default function PrivacyPage() {
     <article className="prose">
       <h1>Privacy Policy</h1>
       <p>
-        <strong>Effective date:</strong> {SITE.EFFECTIVE_DATE}
+        <strong>Effective date:</strong> February 5, 2026
+      </p>
+      <p>
+        <strong>Developer:</strong> Jacopo Alilla ("we," "us," "our")
+      </p>
+      <p>
+        <strong>Contact:</strong> support@unfreeze-app.com
       </p>
 
       <p>
-        This Privacy Policy explains how {SITE.COMPANY_NAME} (“we”, “us”, or “our”) collects and uses information when
-        you use {SITE.APP_NAME} (the “App”) and this website.
+        UNFREEZE ("App") helps users break tasks into steps, plan tasks, track progress, and optionally receive
+        reminders.
       </p>
 
-      <h2>Summary</h2>
+      <h2>1. Information We Collect</h2>
+      <h3>A) Information you provide in the App</h3>
+      <p>
+        Task and planning data (task text, category, schedule, deadlines, reminder preferences, completion/progress
+        status).
+      </p>
+      <p>
+        Optional profile details you choose to enter (for example: preferences used to personalize task breakdowns).
+      </p>
+      <p>
+        Optional profile image reference (if you select one on-device).
+      </p>
+      <h3>B) Subscription and purchase information</h3>
+      <p>
+        If you purchase a subscription, payments are processed by Apple. We receive subscription-related status
+        information needed to activate and manage access (for example: entitlement status, product ID, renewal status)
+        via Apple and RevenueCat.
+      </p>
+      <h3>C) Device and technical information</h3>
+      <p>
+        We may process limited technical/diagnostic information needed to operate, secure, and troubleshoot the App
+        (for example: app version, OS version, device type, crash/error diagnostics).
+      </p>
+      <h3>D) Notifications</h3>
+      <p>
+        If you enable reminders, the App requests notification permission and schedules local notifications on your
+        device.
+      </p>
+
+      <h2>2. Information We Do Not Collect</h2>
       <ul>
-        <li>No login or user accounts are required to use the App.</li>
-        <li>Subscriptions are purchased through Apple In‑App Purchases.</li>
-        <li>We use RevenueCat to help manage subscription status/entitlements.</li>
-        <li>We do not run advertising and we do not track you across apps or websites.</li>
-        <li>This website does not use analytics trackers or advertising cookies.</li>
-      </ul>
-
-      <h2>Information We Collect</h2>
-      <h3>Subscription and purchase information</h3>
-      <p>
-        When you purchase or restore a subscription, Apple and our subscription service provider (RevenueCat) may
-        provide us with purchase/subscription status and related identifiers necessary to validate your entitlement.
-        This may include information such as subscription state, renewal status, product identifiers, and receipts or
-        receipt-related identifiers.
-      </p>
-
-      <h3>Device and app information</h3>
-      <p>
-        We may collect limited technical information needed to operate the service and diagnose issues, such as device
-        type, operating system version, app version, and basic diagnostic data.
-      </p>
-
-      <h2>Information We Do Not Collect</h2>
-      <p>
-        We do not require you to provide personal profile information. We do not intentionally collect your name,
-        home address, phone number, precise location, contacts, photos, or other sensitive personal data to provide the
-        App’s core functionality.
-      </p>
-
-      <h2>How We Use Information</h2>
-      <ul>
-        <li>To provide and maintain subscription entitlements and verify purchase status.</li>
-        <li>To provide customer support and respond to requests.</li>
-        <li>To troubleshoot, secure, and improve the App’s reliability and performance.</li>
-      </ul>
-
-      <h2>How Information Is Shared</h2>
-      <p>
-        We share and/or receive information only as needed to deliver subscriptions and operate the App:
-      </p>
-      <ul>
+        <li>No required account registration for core use of the App.</li>
         <li>
-          <strong>Apple</strong>: Apple processes payments and manages subscriptions via your Apple ID.
+          No advertising ID use for cross-app tracking.
         </li>
+        <li>No sale of personal information.</li>
         <li>
-          <strong>RevenueCat</strong>: We use RevenueCat as a service provider to help manage subscription status and
-          entitlements.
+          No intentional collection of precise location, contacts, or photo library content beyond what you explicitly
+          choose to provide for optional features.
         </li>
       </ul>
 
-      <h2>Data Retention</h2>
+      <h2>3. How We Use Information</h2>
+      <p>We use information to:</p>
+      <ul>
+        <li>Provide core App functionality.</li>
+        <li>Generate AI task breakdowns when requested.</li>
+        <li>Manage subscriptions and restore purchases.</li>
+        <li>Send reminders you explicitly enable.</li>
+        <li>Maintain reliability, security, and support.</li>
+      </ul>
+
+      <h2>4. How We Share Information</h2>
+      <p>We share information only as necessary to operate the App:</p>
+      <ul>
+        <li>Apple: billing, subscriptions, and purchase restoration.</li>
+        <li>RevenueCat: subscription entitlement and status management.</li>
+        <li>AI provider(s) (currently Groq): processing task breakdown requests.</li>
+        <li>Infrastructure/service providers: hosting and technical operations.</li>
+      </ul>
       <p>
-        We retain information only for as long as reasonably necessary for the purposes described above, such as
-        maintaining subscription entitlements, meeting legal obligations, resolving disputes, and enforcing agreements.
+        We do not sell your personal information and we do not use third-party advertising networks for behavioral ad
+        targeting.
       </p>
 
-      <h2>Your Choices and Deletion Requests</h2>
+      <h2>5. Data Retention</h2>
       <p>
-        If you have questions about your data or would like to request deletion of information we may hold, contact us
-        at <a href={`mailto:${SITE.SUPPORT_EMAIL}`}>{SITE.SUPPORT_EMAIL}</a>. We will respond in a reasonable timeframe.
+        We retain information only as long as reasonably necessary for the purposes above, including legal, security,
+        accounting, and dispute-resolution needs. Data retained locally on your device may be removed by deleting tasks
+        or clearing app data in-app (if available) or uninstalling the App.
       </p>
 
-      <h2>Children’s Privacy</h2>
+      <h2>6. Your Choices and Rights</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Disable notifications in iOS Settings and/or in-app settings.</li>
+        <li>Delete tasks and local app data in the App.</li>
+        <li>Manage or cancel subscriptions in Apple ID subscription settings.</li>
+        <li>Request data deletion/help by contacting support@unfreeze-app.com.</li>
+      </ul>
       <p>
-        The App is not directed to children under 13, and we do not knowingly collect personal information from
-        children.
+        We respond to valid privacy requests within a reasonable timeframe and as required by applicable law.
       </p>
 
-      <h2>Changes to This Policy</h2>
+      <h2>7. Children&apos;s Privacy</h2>
       <p>
-        We may update this Privacy Policy from time to time. We will update the effective date above when we make
-        changes.
+        UNFREEZE is not directed to children under 13, and we do not knowingly collect personal information from
+        children under 13.
       </p>
 
-      <h2>Contact Us</h2>
+      <h2>8. International Processing</h2>
       <p>
-        For privacy questions, contact{" "}
-        <a href={`mailto:${SITE.SUPPORT_EMAIL}`}>{SITE.SUPPORT_EMAIL}</a>.
+        Your information may be processed in countries other than your own, which may have different data protection
+        laws.
       </p>
+
+      <h2>9. Security</h2>
+      <p>
+        We use reasonable administrative, technical, and organizational safeguards. No method of transmission or
+        storage is completely secure.
+      </p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy. We will post updates and revise the effective date above.
+      </p>
+
+      <h2>11. Contact</h2>
+      <p>Privacy questions or requests: support@unfreeze-app.com</p>
     </article>
   );
 }
