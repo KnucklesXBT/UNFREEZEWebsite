@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
       <body>
         <Container>
           <SiteHeader />
-          <main className="py-10">{children}</main>
+          <main className="py-8 sm:py-10">{children}</main>
           <SiteFooter />
         </Container>
       </body>
