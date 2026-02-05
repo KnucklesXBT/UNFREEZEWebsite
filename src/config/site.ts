@@ -4,6 +4,6 @@ export const SITE = {
   YOURDOMAIN: "unfreeze-app.com",
   SUPPORT_EMAIL: "support@unfreeze-app.com",
   ONE_LINE_PITCH: "ONE_LINE_PITCH",
-  EFFECTIVE_DATE: "MONTH DAY, YEAR",
-  GOVERNING_LAW: "GOVERNING_LAW"
+  EFFECTIVE_DATE: "February 5, 2026",
+  GOVERNING_LAW: "United Arab Emirates"
 } as const;
