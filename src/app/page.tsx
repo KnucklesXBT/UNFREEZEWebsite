@@ -12,7 +12,6 @@ export default function HomePage() {
   return (
     <section className="prose">
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">{SITE.APP_NAME}</h1>
-      <p className="text-[color:var(--muted)]">{SITE.ONE_LINE_PITCH}</p>
 
       <div className="mt-8 flex flex-wrap gap-3">
         <Link href="/support" className="btn-primary">
